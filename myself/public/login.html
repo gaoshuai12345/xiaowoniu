@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ 	<link rel="stylesheet" type="text/css" href="../css/login.css">
+  <title>登录</title>
+ </head>
+ <body>
+		<header id="head">
+ 		</header> 
+			<div id="centen">
+				<div id="login">
+					<ul>
+						<li id="top">
+							<span>手机号登录</span>
+							<span>|</span>
+							<span>用户名登录</span>
+						</li>
+						<li>
+							<input type="text" id="uname" placeholder="请输入用户名">	
+							<span id="u_name"></span>
+						</li>
+						<li>
+							<input type="" id="upwd" placeholder="请输入密码">
+							<span id="u_pwd"></span>	
+						</li>
+						<li>
+							<a id="forget" href="#">忘记密码？</a>
+						</li>
+						<li>
+							<button id="btn_login" onclick="login()">登录</button>
+						</li>
+						<li id="qq">
+							<img src="../images/QQ.png" alt="">
+							<a href="#">QQ</a>
+							<span>|</span>
+							<img src="../images/weixin.png" alt="">
+							<a href="#">微信</a>
+							<img class="reg" src="../images/reg.png" alt="">
+							<a class="reg" href="#">立即注册</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		<footer>
+		<p>About&nbsp;NetEase&nbsp;公司简介&nbsp;-联系方式-</p>
+		<p></p>
+		<p></p>
+		</footer>
+		<script>
+			function login(){
+				var u_uname=uname.value;
+				var u_upwd=upwd.value;
+				var xhr=new XMLHttpRequest();
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4&&xhr.status==200){
+						var result=xhr.responseText;
+						alert(result);
+					}
+				}
+				var url="http://127.0.0.8080/public/login";
+				xhr.open("post",url,true);
+				var fordata="uname="+u_name+"&upwd="+u_upwd;
+				xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+				xhr.send(formdata);
+			}
+		</script>
+ </body>
+</html>
