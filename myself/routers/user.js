@@ -51,7 +51,7 @@ router.get('/login',(req,res)=>{
 		res.send('not upwd required');
 		return;
 	}
-	pool.query('SELECT *FROM xwn_user WHERE uname=? AND upwd=?',[obj.uname,obj.uname],(err,result)=>{
+	pool.query('SELECT *FROM xwn_user WHERE uname=? AND upwd=?',[obj.uname,obj.upwd],(err,result)=>{
 		if(err) throw err;
 		if(result.length>0){
 			res.send('1');
