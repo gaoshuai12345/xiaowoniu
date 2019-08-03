@@ -9,8 +9,6 @@
      <link rel="shortcut icon" href="images/top/min.ico" type="image/x-icon" />
 
      <title>首页</title>
-	 <!-- 设置视口 -->
-	 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 	 <!-- 导入css -->
 	 <link rel="stylesheet" href="css/bootstrap.css"/>
 	 <!-- 导入3个js -->
@@ -32,33 +30,51 @@
 				  <a  class="text-white m_l-50" href="login.html ">请登录</a>
 			  </li>
 			  <li class="">
-				  <a class="text-white m_l-30" href="login.html">免费注册</a>
+				  <a class="text-white" href="login.html">免费注册</a>
 			  </li>
 			  <li class="">
 				  <a class="text-white m_l-350" href="#">每日签到</a>
 			  </li>
-			  <li class="relative dropdown">
-				  <a data-trigger="dropdown" class="text-white m_l-30" href="#">个人中心<span class="triangle float-left"></span></a>
-				  <ul class="dropdown-menu list-unstyled bg-white display_none absolute zindex">
-					  <li class="text-center"><a class="text_block" href="#">我的优惠劵</a></li>
-					  <li class="text-center"><a class="text_block" href="#">我的红包</a></li>
-					  <li class="text-center"><a class="text_block" href="#">我的小蜗牛</a></li>
-					  <li class="text-center"><a class="text_block" href="#">账号管理</a></li>
-					  <li class="text-center"><a class="text_block" href="#">我的实认证</a></li>
-					  <li class="text-center"><a class="text_block" href="#">我收藏的商品</a></li>
-					  <li class="text-center"><a class="text_block" href="#">我关注的商品</a></li>
-					  <li class="text-center"><a class="text_block" href="#">售后管理</a></li>
-				  </ul>
+			  <li class="dropdown">
+				  <a class="text-white dropbtn" href="#">个人中心</a>
+				  <img src="images/top/jiantou.png" alt="">
+				  <div class="dropdown-content">
+						<a href="javascript:">我的优惠劵</a>
+						<a href="javascript:">我的红包</a>
+						<a href="javascript:">我的小蜗牛</a>
+						<a href="javascript:">账号管理</a>
+						<a href="javascript:">我的实认证</a>
+						<a href="javascript:">我关注的商品</a>
+						<a href="javascript:">售后管理</a>
+				</div>
 			  </li>
-			  <li class="">
-				  <a class="text-white m_l-30" href="#">客服服务</a>
+			  <li class="dropdown">
+				  <a class="text-white  dropbtn" href="#">客服服务</a>
+				  <img src="images/top/jiantou.png" alt="">
+                  <div class="dropdown-content">
+					<a href="javascript:">联系客服</a>
+					<a href="javascript:">帮助中心</a>
+					<a href="javascript:">知识产权保护</a>
+					<a href="javascript:">规则中心</a>
+				  </div>
 			  </li>
-			  <li class="">
-				  <a class="text-white"href="#">充值中心</a>
+			  <li class="dropdown">
+				  <a class="text-white dropbtn"href="#">充值中心</a>
+				  <img src="images/top/jiantou.png" alt="">
+                  <div class="dropdown-content">
+					<a href="javascript:">话费流量</a>
+					<a href="javascript:">游戏充值</a>
+					<a href="javascript:">AppStore充值卡</a>
+				  </div>
 			  </li>
-			  <li class="">
-				  <a class="text-white" href="#">消费者权益</a></li>
-			  <li>
+			  <li class="dropdown">
+					<a class="text-white dropbtn"href="#">消费者权益</a>
+					<img src="images/top/jiantou.png" alt="">
+					<div class="dropdown-content">
+					  <a href="javascript:">消费者告知书</a>
+					  <a href="javascript:">消费者投诉公示</a>
+					</div>
+				</li>
 				  <a class="text-white" href="#">更多</a>
 			  </li>
 	      </ul>
@@ -1117,7 +1133,6 @@
 		<img src="images/footer/nation2.gif" alt=""/>
 	</footer>
   </div>
-  <script src="js/jquery-1.11.3.js"></script>
   <script src="js/index.js"></script>
  </body>
 </html>
